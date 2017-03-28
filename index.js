@@ -64,6 +64,6 @@ app.use((req, res) => {
 	res.status(404).send("Page not Found. Try another page");
 });
 
-app.listen(8080, function() {
-	console.log('Server running on port 8080')
+app.listen(8000, function() {
+	console.log('Server running on port 8000')
 });

@@ -26,7 +26,7 @@ app.get('/:date', (req, res) => {
 			'December'
 		];
 	if (typeof(+req.params.date) === 'number' &&  !isNaN(+req.params.date)) {
-		var date = new Date((+req.params.date + 18000000) * 1000);
+		var date = new Date((+req.params.date) * 1000 + 18000000);
 		
 		console.log(+req.params.date);
 		var natural_date = `${monthNames[+date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
